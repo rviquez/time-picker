@@ -1,0 +1,68 @@
+@import url("./time-picker/main.css");
+
+.text-input-container{
+    height:400px;
+}
+.text-input {
+    margin: 40px 0;
+    width: 100%;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+.text-input label {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 45px;
+}
+
+.text-input i {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    z-index: 2;
+    font-size: 16px;
+}
+
+.text-input .placeholder {
+    position: absolute;
+    display: block;
+    top: 23px;
+    z-index: 2;
+    font-size: 16px;
+    transition: all 200ms ease-in-out;
+    width: 100%;
+    cursor: text;
+}
+
+.text-input input {
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+    width: 100%;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid grey;
+    transition: border-color 200ms ease-in-out;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-input input {
+    height: 30px;
+}
+
+.text-input input:focus,
+.text-input input:valid {
+    border-bottom: 2px solid #A9A9A9;
+}
+
+.text-input input:focus+.placeholder,
+.text-input input:valid+.placeholder {
+    top: 0;
+    cursor: inherit;
+    font-size: 14px;
+    color: #A9A9A9;
+}

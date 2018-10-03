@@ -1,0 +1,122 @@
+/* Layout */
+
+.overlay {
+    background: rgba(128, 128, 128, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    text-align: center;
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+#hour-clock,
+#minute-clock {
+    width: 100%;
+}
+
+.container {
+    max-width: 300px;
+    background-color: #ffffff;
+    z-index: 10000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 2px;
+}
+
+.title {
+    height: 20%;
+    background-color: #2196f3;
+    color: rgba(255,255,255, 0.5);
+}
+
+.title h1 {
+    margin: auto;
+    line-height: 90px;
+    vertical-align: middle;
+}
+
+/* Clock styles */
+#top-circle {
+    fill: #2196f3;
+}
+
+#ok,
+#cancel,
+text,
+circle,
+#ampm {
+    cursor: pointer;
+}
+
+#ok:hover,
+#cancel:hover {
+    font-size: 1.2em;
+}
+
+.clock-footer {
+    height: 50px;
+}
+
+.circle {
+    fill: #f5f5f5;
+    stroke: none;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #2196f3;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #2196f3;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+.meridian-time {
+    font-size: 24px;
+}
+
+.military-time {
+    font-size: 18px;
+}
+
+.clock-footer {
+    color: #2196f3;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.clock-footer a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sizing-box {
+    fill: none;
+}
+
+#hour,
+#minute {
+    transform-origin: 300px 300px;
+}
+
+/* Utility classes */
+.hidden {
+    display: none;
+}
+
+.selected {
+    color: #ffffff;
+}
